@@ -7,3 +7,4 @@ COPY startup.sh /
 CMD sh startup.sh
 
 EXPOSE 4000
+EXPOSE 80
