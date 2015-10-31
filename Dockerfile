@@ -1,4 +1,4 @@
-FROM msaraiva/elixir-dev:1.0.5
+FROM trenpixster/elixir:1.1.1
 
 RUN mkdir /app; mix local.hex --force
 
