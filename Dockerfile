@@ -1,4 +1,4 @@
-FROM trenpixster/elixir:1.1.1
+FROM trenpixster/elixir:1.3.2
 
 RUN mkdir /app; mix local.hex --force
 
