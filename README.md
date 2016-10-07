@@ -15,3 +15,11 @@ The commands boild down to:
     MIX_ENV=prod mix do deps.get, compile
     MIX_ENV=prod mix compile.protocols
     MIX_ENV=prod elixir -pa _build/prod/consolidated -S mix server
+
+## Optional configuration
+
+You can set the following arguments:
+- `IEX_COOKIE` sets the default cookie for connecting
+- `IEX_NAME` sets the name for connecting (@ip will be replaced by the docker's ip address)
+
+The combination of these allows you to connect another erlang node to this one.  See http://benjamintan.io/blog/2014/05/25/connecting-elixir-nodes-on-the-same-lan/
