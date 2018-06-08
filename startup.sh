@@ -17,5 +17,5 @@ then
 fi
 
 cd /app
-echo "MY OPTIONS MY OPTIONS WOOO MY OPTIONS: $CMD_OPTS"
+
 MIX_ENV=prod elixir $CMD_OPTS -pa _build/prod/consolidated -S mix server
