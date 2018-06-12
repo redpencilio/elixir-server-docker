@@ -2,7 +2,7 @@
 
 sh /setup.sh
 
-IP_ADDRESS=`ifconfig eth0 | grep inet | grep -oP "\\d+.\\d+.\\d+.\\d+" | head -n 1`
+IP_ADDRESS=`ip addr show eth0 | grep inet | grep -oP "\\d+.\\d+.\\d+.\\d+" | head -n 1`
 CMD_OPTS=""
 
 if [[ $IEX_NAME ]]
@@ -17,5 +17,5 @@ then
 fi
 
 cd /app
-echo "MY OPTIONS MY OPTIONS WOOO MY OPTIONS: $CMD_OPTS"
+
 MIX_ENV=prod elixir $CMD_OPTS -pa _build/prod/consolidated -S mix server
