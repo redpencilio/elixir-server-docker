@@ -1,6 +1,11 @@
 #!/bin/sh
 sh /setup.sh
 
+if [[ $DEVELOPMENT != "" ]]
+then
+    sh /setup.sh
+fi
+
 IP_ADDRESS=`ip addr show eth0 | grep inet | grep -oP "\\d+.\\d+.\\d+.\\d+" | head -n 1`
 CMD_OPTS=""
 
