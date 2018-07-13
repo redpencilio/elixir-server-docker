@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd /app
 
 yes | MIX_ENV=prod mix do deps.get, compile

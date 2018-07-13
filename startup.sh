@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/bin/sh
 sh /setup.sh
 
 IP_ADDRESS=`ip addr show eth0 | grep inet | grep -oP "\\d+.\\d+.\\d+.\\d+" | head -n 1`
