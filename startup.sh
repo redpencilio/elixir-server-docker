@@ -1,5 +1,4 @@
 #!/bin/sh
-sh /setup.sh
 
 if [[ $DEVELOPMENT != "" ]]
 then
