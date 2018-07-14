@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [[ $DEVELOPMENT != "" ]]
+if [[ "$DEVELOPMENT" != "" ]]
 then
     sh /setup.sh
 fi
