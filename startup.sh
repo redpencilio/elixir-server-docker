@@ -21,4 +21,4 @@ fi
 
 cd /app
 
-MIX_ENV=prod elixir $CMD_OPTS -pa _build/prod/consolidated -S mix server
+MIX_ENV=prod elixir $CMD_OPTS -pa _build/prod/consolidated -S mix run --no-halt
