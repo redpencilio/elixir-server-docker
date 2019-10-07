@@ -12,6 +12,7 @@ RUN apk update && \
 
 RUN mix local.rebar --force
 
+ENV RUNNING_IN_DOCKER="true"
 ENV DEVELOPMENT=""
 
 CMD ["/bin/sh","startup.sh"]
