@@ -28,4 +28,7 @@ fi
 
 cd /app
 
+echo -n "Launching Elixir on IP $IP_ADDRESS as "
+echo "MIX_ENV=prod elixir $CMD_OPTS --erl \"$ERL_OPTS\" -pa _build/prod/consolidated -S mix run --no-halt"
+
 MIX_ENV=prod elixir $CMD_OPTS --erl "$ERL_OPTS" -pa _build/prod/consolidated -S mix run --no-halt
