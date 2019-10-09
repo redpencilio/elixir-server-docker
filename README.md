@@ -21,5 +21,7 @@ The commands boild down to:
 You can set the following arguments:
 - `IEX_COOKIE` sets the default cookie for connecting
 - `IEX_NAME` sets the name for connecting (@ip will be replaced by the docker's ip address)
+- `IEX_PORT` forces running the node on a particular port (eg: 9000)
+- `LOG_ELIXIR_STARTUP_COMMAND` Logs the command by which the service will be booted up and the IP address of the container when non-empty (handy for connecting to the node)
 
 The combination of these allows you to connect another erlang node to this one.  See http://benjamintan.io/blog/2014/05/25/connecting-elixir-nodes-on-the-same-lan/

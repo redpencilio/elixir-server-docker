@@ -28,7 +28,7 @@ fi
 
 cd /app
 
-if [[ $LOG_ELIXIR_STARTUP_COMMAND ]]
+if [[ ! -z "${LOG_ELIXIR_STARTUP_COMMAND}" ]]
 then
   echo -n "Launching Elixir on IP $IP_ADDRESS as "
   echo "MIX_ENV=prod elixir $CMD_OPTS --erl \"$ERL_OPTS\" -pa _build/prod/consolidated -S mix run --no-halt"
