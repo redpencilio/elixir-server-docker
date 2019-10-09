@@ -8,6 +8,7 @@ fi
 IP_ADDRESS=`ip addr show eth0 | grep inet | grep -oP "\\d+.\\d+.\\d+.\\d+" | head -n 1`
 CMD_OPTS=""
 ERL_OPTS=""
+ERL_OPTS="-start_epmd true"
 
 if [[ $IEX_NAME ]]
 then
