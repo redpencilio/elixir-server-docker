@@ -1,4 +1,4 @@
-FROM elixir:1.9-alpine
+FROM elixir:1.11-alpine
 
 RUN mkdir /app; mix local.hex --force
 
@@ -11,6 +11,7 @@ RUN apk update && \
     apk add grep
 
 RUN mix local.rebar --force
+RUN mix local.hex
 
 ENV RUNNING_IN_DOCKER="true"
 ENV DEVELOPMENT=""
