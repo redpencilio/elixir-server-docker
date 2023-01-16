@@ -34,4 +34,4 @@ then
   echo "MIX_ENV=prod elixir $CMD_OPTS --erl \"$ERL_OPTS\" -pa _build/prod/consolidated -S mix run --no-halt"
 fi
 
-MIX_ENV=prod elixir $CMD_OPTS --erl "$ERL_OPTS" -pa _build/prod/consolidated -S mix run --no-halt
+MIX_ENV=prod exec elixir $CMD_OPTS --erl "$ERL_OPTS" -pa _build/prod/consolidated -S mix run --no-halt
