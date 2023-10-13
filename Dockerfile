@@ -16,7 +16,7 @@ RUN mix local.hex
 ENV RUNNING_IN_DOCKER="true"
 ENV DEVELOPMENT=""
 
-CMD ["/bin/sh","startup.sh"]
+CMD ["/startup.sh"]
 
 EXPOSE 4000
 EXPOSE 80
